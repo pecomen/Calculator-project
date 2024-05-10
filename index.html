@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="indess.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="output" readonly>
+        <table class="buttons">
+            <div class="btn">
+                <tr>
+                    <td><button onclick="appendToOutput('7')">7</button></td>
+                    <td><button onclick="appendToOutput('8')">8</button></td>
+                    <td><button onclick="appendToOutput('9')">9</button></td>
+                    <td><button onclick="calculate('/')">&divide;</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="appendToOutput('4')">4</button></td>
+                    <td><button onclick="appendToOutput('5')">5</button></td>
+                    <td><button onclick="appendToOutput('6')">6</button></td>
+                    <td><button onclick="calculate('*')">&times;</button></td>
+                    
+                </tr>
+                <tr>
+                    <td><button onclick="appendToOutput('1')">1</button></td>
+                    <td><button onclick="appendToOutput('2')">2</button></td>
+                    <td><button onclick="appendToOutput('3')">3</button></td>
+                    <td><button onclick="calculate('-')">&minus;</button></td>
+                   
+                </tr>
+                <tr>
+                    <td><button onclick="appendToOutput('0')">0</button></td>
+                    <td><button onclick="appendToOutput('.')">&dot;</button></td>
+                    <td><button onclick="calculate('+')">&plus;</button></td>
+                    <td><button onclick="calculate('=')" id="equal">&equals;</button></td>
+                    
+                </tr>
+
+            </div>
+           
+        
+        </table>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
